@@ -277,6 +277,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
     </section>
+
+      <div class="generator">
+    <h2>Random Number Generator</h2>
+    <div id="number" class="number">--</div>
+    <button onclick="generateNumber()">Generate</button>
+  </div>
+
+  <script>
+    function generateNumber() {
+      const randomNum = Math.floor(Math.random() * 100) + 1;
+      document.getElementById('number').textContent = randomNum;
+    }
+  </script>
     <!-- End Video Promo Section -->
 
     <!-- Team Section Start -->
